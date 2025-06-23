@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    actualizarDiasRestantes();
-    setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
+    //actualizarDiasRestantes();
+    //setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
      // Datos para el gráfico de líneas
   const dataLine1 = {
     labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'], // Etiquetas de los días
     datasets: [{
-      label: 'Km recorridos en Semana 23',
-      data: [10, 11, 11, 14], // Datos de los km recorridos en cada día
+      label: 'Km recorridos en Semana 25',
+      data: [14, 9, 11, 25], // Datos de los km recorridos en cada día
       borderColor: 'rgba(75, 192, 192, 1)',
       fill: true,
       tension: 0.1
@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const dataLine2 = {
     labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'], // Etiquetas de los días
     datasets: [{
-      label: 'Km recorridos en Semana 24',
-      data: [6, 5, 8, 50], // Datos de los km recorridos en cada día
+      label: 'Km recorridos en Semana 26',
+      data: [13, 17, 12, 22], // Datos de los km recorridos en cada día
       borderColor: 'rgba(153, 102, 255, 1)',
       fill: true,
       tension: 0.1
@@ -107,5 +107,17 @@ const myChartLine1 = new Chart(document.getElementById('myChart-line-1'), {
     document.getElementById("Semana 2").appendChild(video3);
     document.getElementById("Semana 2").appendChild(video4);
   
+    const audios = document.querySelectorAll("audio");
+
+    audios.forEach(audio => {
+      audio.addEventListener("play", () => {
+        audios.forEach(otherAudio => {
+          if (otherAudio !== audio) {
+            otherAudio.pause();
+          }
+        });
+      });
+    });
+
   });
   

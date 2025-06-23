@@ -12,17 +12,31 @@ body {
   margin: 0 auto;
   padding: 1em; /* Utiliza em en lugar de píxeles */
 }
+.audio-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  margin: 2em auto;
+  padding: 1em;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.audio-container h3 {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
 
 .main-container {
   background-color:#ffffff;
-  padding: -2em; /* Utiliza em en lugar de píxeles */
-  padding-top: -10em;
-  padding-bottom: -10em;
+  padding-top: -14em;
+  padding-bottom: -14em;
   padding-left: 4em;
   padding-right: 12em;
   margin: 6em; /* Eliminado para evitar márgenes laterales en dispositivos pequeños */
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: -1em;
   margin-left: 2em;
   margin-inline-start: 2em;
   color: black;
