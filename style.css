@@ -56,12 +56,24 @@ body {
 }
 
 .sub-container h1 {
-  background-color: #b0afaf;
-  padding: 2em;
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  font-size: 2.2em;
+  color: #fdfdf7;
+  font-size: 1.2em;
+  margin: 0; /* Eliminado para evitar márgenes predeterminados */
+  font-weight: bold;
   text-align: center;
+  display: flex;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+}
+.h1 {
+  color: #ffffff;
+  font-size: 1.2em;
+  margin: 0; /* Eliminado para evitar márgenes predeterminados */
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
 }
 
 .sub-container h2 {
@@ -98,7 +110,7 @@ h2 {
     margin-block-end: 0.3em;
     margin-inline-start: 25px;
     margin-inline-end: 0px;
-    padding-left: 1em;
+    padding-left: 3em;
     font-family: "Tajawal", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -179,7 +191,7 @@ video {
 }
 
 .sub-container h4 {
-  background-color: #e2c19a;
+  background-color: #9e22d8;
   padding: 2em; /* Utiliza em en lugar de píxeles */
   margin: 0; /* Elimina márgenes predeterminados */
   font-family: 'Arial', sans-serif;
