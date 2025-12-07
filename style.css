@@ -252,10 +252,10 @@ video {
 .sub-container h4::after {
   content: "";
   position: absolute;
-  right: 16px;
-  bottom: 12px;
-  width: 160px;   /* Aumenta el ancho de la imagen */
-  height: 120px;  /* Aumenta el alto de la imagen */
+  right: 6px;
+  bottom: 15px;
+  width: 100px;   /* Aumenta el ancho de la imagen */
+  height: 100px;  /* Aumenta el alto de la imagen */
   background: url('2.jpg') no-repeat right bottom;
   background-size: contain;
   opacity: 0.9;
@@ -263,7 +263,10 @@ video {
   border-radius: 8px;
   z-index: 1;
 }
-
+.sub-container.no-image h4::after {
+  background: none;
+  display: none;
+}
 .image-container {
   background-color: #fffdfd;
   text-align-last: left; 
