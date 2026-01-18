@@ -249,6 +249,19 @@ video {
   border: 2px solid #444; /* Borde gris oscuro */
 }
 
+<<<<<<< HEAD
+.sub-container h4 {
+  position: relative;
+  color: #222;
+  padding: 24px 24px 40px 24px;
+  border-radius: 10px;
+  min-height: 120px;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 8px rgba(255,255,255,0.7);
+  overflow: visible;
+  background: #fff;
+  border: 2px solid #444;
+=======
 .sub-container h4::after {
   content: "";
   position: absolute;
@@ -262,6 +275,7 @@ video {
   pointer-events: none;
   border-radius: 8px;
   z-index: 1;
+>>>>>>> cecad879c3522ed46d8ba9cc662ca4f7c86d15c8
 }
 
 .image-container {
