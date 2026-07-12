@@ -1,151 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> GDE - Trail Running</title>  
+    <title>GDE - Trail Running</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="gde1.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-</head>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub-container hero">
+        <h1>GDE TRAIL RUNNING<br>Alumno: Mariano Alsamora. </h1>
+      </div>
 
-<body>
-<div class="container">
-    <div class="sub-container">
-        <h1> GDE TRAIL RUNNING  <br> Alumno: Mariano Alsamora</h1>
-    </div>
-        <h2>OBJETIVO MENSUAL: Mejorar la fluidez. </h2>
-        <h2>FASE: Adquisición.</h2>
-        <!--<h2 id ="pageTitle"> PRÓXIMA CARRERA Bariloche UTMB 130km 20/11/2025. </h2>
-        <div id="countdown" class="countdown-llamativo"></div>-->
-        <h2 id="result"></h2>
-                
-    <div class="sub-container no-image">
-        <h4>SEMANA 24
-        <br>Objetivo semanal: Apretar en las subidas consciente de la respiración. </br>
-            </h4>   
-        <p>Entrada en calor </p>   
-        <p> 4 vueltas x 13 repeticiones </p>            
-        <div class="image-container">  
-            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
-                <source src="Video1.mp4" type="video/mp4">
-                </video>
-        </div>
-        <div class="image-container">  
-            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
-                <source src="Video2.mp4" type="video/mp4">
-                </video>
-        </div>
-      
-        <div><p> Running </p>
-        </div>
-        <div class="column-container 1">           
-            <div class="column">
-                <h3>Dia 1
-                <br> Lunes: 14 km calle.</h3>
-                    <p> -4 km ágiles. </p> 
-                    <p> -5 km, 30" ágiles x 30" suaves. </p> 
-                    <p> -5 km de menor a mayor. </p> 
-            </div>
-            <div class="column">
-                <h3>Dia 2 
-                <br> Miércoles: 5 km calle.</h3>
-                    <p> -5 km al mejor ritmo posible. </p> 
-            </div>
-            <div class="column">
-                <h3>Dia 3
-                <br> Viernes: 16 km trail Arco.</h3>
-                    <p> -3 km menor a mayor. </p> 
-                    <p> -4 km fuertes. </p> 
-                    <p> -5 km, 4' suaves x 2' fuertísímooos x 1' suave. </p> 
-                    <p> -4 km buenas sensaciones. </p> 
-            </div>
-            <div class="column">
-                <h3>Dia 4 
-                <br> Sábado: 20 km trail Arco.</h3>
-                    <p> -4 km de menor a mayor. </p> 
-                    <p> -8 km, 50m ágiles x 200m suaves. </p> 
-                    <p> -8 km ágiles. </p> 
-            </div> 
+      <h2>OBJETIVO MENSUAL: Capitalizar lo ganado en el proceso.</h2>
+      <h2>FASE: Adquisición.</h2>
+
+      <!--<h2 id="pageTitle">PRÓXIMA CARRERA Bariloche UTMB 80KM 21/11/2025</h2>
+      <div id="countdown" class="countdown-llamativo"></div> -->
+
+      <div class="sub-container week-block no-image">
+        <div class="week-header">
+          <h4>SEMANA 26<br>Objetivo semanal: Capitalizar lo ganado en el proceso.</h4>
+          <div class="week-details">
+            <p><strong>Entrada en calor</strong></p>
+            <p>4 vueltas x 14 repeticiones</p>
+          </div>
         </div>
 
-        <div>
-            <audio controls>
-                    <source src="Audio1.ogg" type="audio/ogg">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-        </div>
-                  
-        <div id="column-container 3">
-        <canvas id="myChart-line-1"></canvas>
-        </div>      
-    </div>
- 
-     <div class="sub-container no-image">
-        <h4>SEMANA 25
-            <br>Objetivo semanal: Trabajar con la cadencia y respiración. </br>
-        </h4>
-        <p>Entrada en calor </p>   
-        <p> 4 vueltas x 12 repeticiones </p>
-        <div class="image-container">  
-            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
-                <source src="Video4.mp4" type="video/mp4">
+        <div class="media-grid">
+          <div class="image-container">
+            <video class="responsive-video" controls>
+              <source src="Video1.mp4" type="video/mp4">
             </video>
-        </div>
-        <div class="image-container">  
-            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
-                <source src="Video5.mp4" type="video/mp4">
+          </div>
+          <div class="image-container">
+            <video class="responsive-video" controls>
+              <source src="Video2.mp4" type="video/mp4">
             </video>
+          </div>
         </div>
-        <div><p> Running </p>
-        </div>    
-        <div class="column-container 1">           
-            <div class="column">            
-                <h3>Dia 1 
-                <br> Lunes: 14 km trail mixto calle.</h3>
-                    <p> -3 km de menor a mayor. </p> 
-                    <p> -4 km, 45" fuertes x 45" suaves. </p> 
-                    <p> -7 km bajas pulsaciones. </p> 
-            </div>
-            <div class="column">            
-                <h3>Dia 2
-                <br> Miércoles: 9 km calle.</h3>
-                    <p> -2 km de menor a mayor. </p> 
-                    <p> -4 km, 1000m suaves x 1000 de menor a mayor. </p> 
-                    <p> -3 km, 30" suaves x 30" fuertes. </p> 
-            </div>
-            <div class="column">      
-                <h3>Dia 3
-                <br> Viernes: 15 km trail senderos.</h3>
-                    <p> -3 km suave. </p> 
-                    <p> -12 km bajas pulsaciones. </p> 
-            </div>
-            <div class="column">
-                <h3>Dia 4
-                <br> Sábado: 15 km trail Arco.</h3>
-                    <p> -15 km de menor a mayor. </p> 
-            </div>
-        </div>
-        <div> 
-            <audio controls>
-            <source src="Audio2.ogg" type="audio/ogg">
-            Tu navegador no soporta el elemento de audio.
-            </audio>
-        </div>
-                                
-        <div id="column-container 4">
-        <canvas id="myChart-line-2"></canvas>
+      </div>
+
+      <p class="section-label">Running</p>
+      <div class="column-container">
+        <article class="column">
+          <h3>Día 1</h3>
+          <p class="day-title">Lunes: 8 km calle.</p>
+          <p>-8 km ágiles.</p>
+        </article>
+
+        <article class="column">
+          <h3>Día 2</h3>
+          <p class="day-title">Miércoles: 10 km trail Senderos.</p>
+          <p>-10 km buenas sensaciones.</p>
+        </article>
+
+             
+        <article class="column">
+          <h3>Día 3</h3>
+          <p class="day-title">Viernes: 12 km calle.</p>
+          <p>-12 km bajas pulsaciones.</p>
+        </article>
+
+        <article class="column">
+          <h3>Día 4</h3>
+          <p class="day-title">Sábado: 17 km trail Arco.</p>
+          <p>-17 km buenas sensaciones.</p>
+        </article>
+      </div>
+
+      <div class="audio-block">
+        <audio controls>
+          <source src="Audio1.ogg" type="audio/ogg">
+          <source src="Audio1.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <!-- <div class="small-paragraph-container">
+            <p> Método de recuperación </p>
+            <p> -. </p>     
+      </div>
+      <div class="image-container">  
+            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                <source src="Video3.mp4" type="video/mp4">
+                </video>
+      </div>   -->
+              
+      <div class="chart-container">
+      <canvas id="myChart-line-1"></canvas>
+      </div>
+
+       <div class="sub-container week-block no-image">
+        <div class="week-header">
+          <h4>SEMANA 27<br>Objetivo semanal: Apretar en las bajadas, consciencia en el tiempo de contacto del pie.</h4>
+          <div class="week-details">
+            <p><strong>Entrada en calor</strong></p>
+            <p>4 vueltas x 12 repeticiones</p>
+          </div>
         </div>
 
-    </div> 
 
-    <script src="script.js"></script>
+        <div class="media-grid">
+          <div class="image-container">
+            <video class="responsive-video" controls>
+              <source src="Video4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="image-container">
+            <video class="responsive-video" controls>
+              <source src="Video5.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
 
-</div> 
-<img class="" src="logo gde blanco horizontal.png" alt="Blanco">     
-</body>
+      <p class="section-label">Running</p>
+       <div class="column-container">
+        <article class="column">
+          <h3>Día 1</h3>
+          <p class="day-title">Lunes: 15 km trail Senderos de Chacras.</p>
+          <p>-6 km de menor a mayor.</p>
+          <p>-9 km bajas pulsaciones.</p>
+        </article>
+
+        <article class="column">
+          <h3>Día 2</h3>
+          <p class="day-title">Miércoles: 11 km trail Senderos de Chacras.</p>
+          <p>-2 km ágiles.</p>
+          <p>-9 km, 40" fuertes x 40" suaves.</p>
+        </article>  
+        
+        <article class="column">
+          <h3>Día 4</h3>
+          <p class="day-title">Viernes: 13 km trail Senderos de Chacras.</p>
+          <p>-13 km ágiles.</p>
+        </article>
+
+        <article class="column">
+          <h3>Día 5</h3>
+          <p class="day-title">Sábado: 20 km trail Arco.</p>
+          <p>-20 km bajas pulsaciones.</p>
+        </article>
+      </div>
+
+      <div class="audio-block">
+        <audio controls>
+          <source src="Audio2.ogg" type="audio/ogg">
+          <source src="Audio2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <!-- <div class="small-paragraph-container">
+            <p> Método de recuperación </p>
+            <p> -. </p>     
+      </div>
+      <div class="image-container">  
+            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                <source src="Video6.mp4" type="video/mp4">
+                </video>
+      </div> -->
+
+      <script src="script.js"></script>
+    </div>
+    <img src="logo gde blanco horizontal.png" alt="Blanco">
+  </body>
 </html>
