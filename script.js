@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Ejecutar la actualización de días y programarla diariamente
-  actualizarDiasRestantes();
-  setInterval(actualizarDiasRestantes, 24 * 60 * 60 * 1000); // Actualizar cada 24h
+  //actualizarDiasRestantes();
+  //setInterval(actualizarDiasRestantes, 24 * 60 * 60 * 1000); // Actualizar cada 24h
  
   const chartFontFamily = '"Tajawal", Arial, sans-serif';
   const sharedChartOptions = {
@@ -95,10 +95,10 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   // Datos para el gráfico de líneas (se crean solo si existen los canvas en el HTML)
   const dataLine1 = {
-    labels: ['Día 1', 'Día 2', 'Día 3'],
+    labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'],
     datasets: [{
-      label: 'Km recorridos en Semana 44',
-      data: [4, 5, 87],
+      label: 'Km recorridos en Semana 45',
+      data: [9, 8, 10, 15],
       borderColor: 'rgba(75, 192, 192, 1)',
       fill: true,
       tension: 0.1
@@ -108,8 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const dataLine2 = {
     labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'],
     datasets: [{
-      label: 'Km recorridos en Semana 39',
-      data: [14, 12, 12, 28],
+      label: 'Km recorridos en Semana 46',
+      data: [10, 12, 9, 25],
       borderColor: 'rgba(153, 102, 255, 1)',
       fill: true,
       tension: 0.1
@@ -146,7 +146,7 @@ const myChartLine1 = new Chart(document.getElementById('myChart-line-1'), {
 
 function actualizarDiasRestantes() {
   // Fecha objetivo fija
-  const objetivoDate = new Date('2026-11-21');
+  const objetivoDate = new Date('2026-06-06');
   const currentDate = new Date();
   const timeDiff = objetivoDate - currentDate;
   const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
